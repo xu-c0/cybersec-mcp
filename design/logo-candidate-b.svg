@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Bracket Lock: Icon Mark -->
+  <g transform="translate(10, 10)">
+    <!-- Left angle bracket < -->
+    <path d="M38 20 L12 50 L38 80" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Right angle bracket > -->
+    <path d="M62 20 L88 50 L62 80" stroke="#10b981" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <!-- Keyhole circle in center -->
+    <circle cx="50" cy="44" r="10" fill="#111827" stroke="#10b981" stroke-width="2.5"/>
+    <!-- Keyhole slot -->
+    <path d="M47 50 L50 68 L53 50" fill="#111827" stroke="#10b981" stroke-width="2" stroke-linejoin="round"/>
+    <!-- Small dot in keyhole circle -->
+    <circle cx="50" cy="42" r="3" fill="#10b981"/>
+  </g>
+  <!-- Text lockup -->
+  <g transform="translate(115, 35)">
+    <text font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="700" fill="#111827">
+      Cyber<tspan fill="#10b981">Prompt</tspan>
+    </text>
+    <text y="28" font-family="system-ui, -apple-system, sans-serif" font-size="13" font-weight="400" fill="#6b7280" letter-spacing="3">
+      300+ SECURITY TOOLKIT
+    </text>
+  </g>
+</svg>

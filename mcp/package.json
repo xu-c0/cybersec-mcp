@@ -1,0 +1,60 @@
+{
+  "name": "@xu-c0/cybersec-mcp",
+  "version": "0.1.0",
+  "description": "MCP server with 323 cybersecurity prompts and 7 scenario workflows. Drops into Claude Desktop, Claude Code, Cursor, and other MCP-compatible clients.",
+  "type": "module",
+  "bin": {
+    "cybersec-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "sync-data": "node scripts/sync-data.mjs",
+    "build": "npm run sync-data && tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "cybersecurity",
+    "security",
+    "ai-agent",
+    "claude",
+    "anthropic",
+    "pentest",
+    "soc",
+    "incident-response",
+    "threat-hunting",
+    "blue-team",
+    "red-team",
+    "osint",
+    "mitre-attack"
+  ],
+  "author": "xu-c0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xu-c0/cybersec-mcp.git"
+  },
+  "homepage": "https://github.com/xu-c0/cybersec-mcp#readme",
+  "bugs": "https://github.com/xu-c0/cybersec-mcp/issues",
+  "publishConfig": {
+    "access": "public"
+  }
+}

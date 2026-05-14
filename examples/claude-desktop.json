@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cybersec": {
+      "command": "npx",
+      "args": ["-y", "@xu-c0/cybersec-mcp"]
+    }
+  }
+}

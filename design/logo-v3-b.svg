@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="pulseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="60%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="pulseGrad2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="pulseGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.5"/>
+      <stop offset="60%" stop-color="#06b6d4" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="bloomGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.6 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="motionDepth">
+      <feGaussianBlur stdDeviation="0.5" result="slight"/>
+      <feMerge>
+        <feMergeNode in="slight"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="speedLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#10b981" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Background glow orb -->
+  <circle cx="32" cy="32" r="24" fill="url(#pulseGlow)"/>
+  <!-- Speed / motion lines -->
+  <rect x="4" y="24" width="18" height="1.2" rx="0.6" fill="url(#speedLine)"/>
+  <rect x="6" y="29" width="14" height="1" rx="0.5" fill="url(#speedLine)" opacity="0.6"/>
+  <rect x="8" y="38" width="12" height="1" rx="0.5" fill="url(#speedLine)" opacity="0.4"/>
+  <!-- Main chevron / cursor mark - double layered -->
+  <!-- Back chevron (shadow/depth) -->
+  <path d="M22 12 L44 32 L22 52" stroke="url(#pulseGrad2)" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.3" filter="url(#bloomGlow)"/>
+  <!-- Front chevron -->
+  <path d="M22 12 L44 32 L22 52" stroke="url(#pulseGrad)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round" filter="url(#motionDepth)"/>
+  <!-- Cursor blink line -->
+  <line x1="48" y1="20" x2="48" y2="44" stroke="url(#pulseGrad)" stroke-width="3.5" stroke-linecap="round" opacity="0.85"/>
+  <!-- Top edge highlight -->
+  <path d="M23 13 L38 27" stroke="white" stroke-width="1.2" stroke-linecap="round" opacity="0.25"/>
+  <!-- Specular on cursor -->
+  <line x1="48" y1="22" x2="48" y2="28" stroke="white" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/>
+</svg>

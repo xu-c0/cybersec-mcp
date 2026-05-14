@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="h1g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/><stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="h1g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/><stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="h1g3" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d7a5a" stop-opacity="0.95"/><stop offset="100%" stop-color="#1e3a5f" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="h1g4" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.9"/><stop offset="100%" stop-color="#2563eb" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="h1glow">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="h1shadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="0.8" result="b"/>
+      <feOffset dx="0.5" dy="1" result="o"/><feFlood flood-color="#000" flood-opacity="0.35" result="c"/>
+      <feComposite in="c" in2="o" operator="in" result="s"/>
+      <feMerge><feMergeNode in="s"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="32" cy="32" r="22" fill="url(#h1g2)" opacity="0.1" filter="url(#h1glow)"/>
+  <!-- Precise geometric facets forming a compact C -->
+  <!-- Top outer facet -->
+  <polygon points="20,12 36,9 34,18 18,19" fill="url(#h1g1)" filter="url(#h1shadow)"/>
+  <!-- Top inner facet -->
+  <polygon points="36,9 48,15 42,22 34,18" fill="url(#h1g4)" filter="url(#h1shadow)"/>
+  <!-- Upper-left facet -->
+  <polygon points="18,19 34,18 30,30 12,28" fill="url(#h1g2)" filter="url(#h1shadow)"/>
+  <!-- Lower-left facet -->
+  <polygon points="12,28 30,30 28,42 14,44" fill="url(#h1g3)" filter="url(#h1shadow)"/>
+  <!-- Bottom-left facet -->
+  <polygon points="14,44 28,42 32,50 20,52" fill="url(#h1g3)" filter="url(#h1shadow)" opacity="0.9"/>
+  <!-- Bottom outer facet -->
+  <polygon points="20,52 32,50 36,55 22,56" fill="url(#h1g2)" filter="url(#h1shadow)" opacity="0.85"/>
+  <!-- Bottom-right facet -->
+  <polygon points="32,50 46,48 50,52 36,55" fill="url(#h1g3)" filter="url(#h1shadow)" opacity="0.8"/>
+  <!-- Center facet (key highlight) -->
+  <polygon points="30,30 34,18 42,22 38,32" fill="url(#h1g1)" opacity="0.6"/>
+  <!-- Edge highlights -->
+  <line x1="34" y1="18" x2="30" y2="30" stroke="#fff" stroke-width="0.7" opacity="0.35"/>
+  <line x1="30" y1="30" x2="28" y2="42" stroke="#fff" stroke-width="0.5" opacity="0.25"/>
+  <line x1="18" y1="19" x2="34" y2="18" stroke="#fff" stroke-width="0.6" opacity="0.3"/>
+  <!-- Specular -->
+  <circle cx="26" cy="17" r="2" fill="#fff" opacity="0.35"/>
+  <circle cx="24" cy="15" r="0.9" fill="#fff" opacity="0.5"/>
+</svg>

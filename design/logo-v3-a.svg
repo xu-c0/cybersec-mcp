@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="prismMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="prismHighlight" x1="0%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="prismShadow" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.5"/>
+    </linearGradient>
+    <filter id="prismGlow">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="innerShadow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="1.5" result="blur"/>
+      <feOffset dx="1" dy="1.5" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.3" result="color"/>
+      <feComposite in="color" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Outer glow layer -->
+  <path d="M16 10 C16 10 14 32 20 46 L32 54 L44 46 C50 32 48 10 48 10 L32 6 Z" fill="url(#prismMain)" opacity="0.2" filter="url(#prismGlow)"/>
+  <!-- C shape - back layer -->
+  <path d="M14 16 L14 48 L30 54 L30 44 L24 41 L24 23 L30 20 L30 10 Z" fill="url(#prismMain)" filter="url(#innerShadow)"/>
+  <!-- P shape - front layer with offset for depth -->
+  <path d="M30 10 L30 54 L40 54 L40 38 L46 34 C52 30 52 18 46 14 L30 10 Z M40 20 L43 22 C46 24 46 28 43 30 L40 32 Z" fill="url(#prismMain)" filter="url(#innerShadow)" opacity="0.9"/>
+  <!-- Highlight facet on C -->
+  <path d="M14 16 L30 10 L30 20 L24 23 L24 30 L14 28 Z" fill="url(#prismHighlight)"/>
+  <!-- Highlight facet on P -->
+  <path d="M30 10 L46 14 L43 22 L40 20 L40 14 L30 14 Z" fill="url(#prismHighlight)" opacity="0.7"/>
+  <!-- Bottom shadow facet -->
+  <path d="M14 42 L14 48 L30 54 L40 54 L40 48 L30 48 Z" fill="url(#prismShadow)" opacity="0.5"/>
+  <!-- Specular highlight dot -->
+  <circle cx="22" cy="22" r="2.5" fill="white" opacity="0.25"/>
+</svg>

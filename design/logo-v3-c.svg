@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="orbCore" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="35%" stop-color="#10b981"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#1e3a5f"/>
+    </radialGradient>
+    <radialGradient id="orbShine" cx="30%" cy="25%" r="40%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.45"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orbAmbient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#06b6d4" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111827" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#111827" stop-opacity="0.3"/>
+    </linearGradient>
+    <filter id="orbGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.5 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="rimLight">
+      <feGaussianBlur stdDeviation="1" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="orbClip">
+      <circle cx="32" cy="32" r="24"/>
+    </clipPath>
+  </defs>
+  <!-- Ambient glow -->
+  <circle cx="32" cy="32" r="30" fill="url(#orbAmbient)"/>
+  <!-- Main orb sphere -->
+  <circle cx="32" cy="32" r="24" fill="url(#orbCore)" filter="url(#orbGlow)"/>
+  <!-- Shield cut / negative space arc suggesting protection -->
+  <g clip-path="url(#orbClip)">
+    <path d="M20 14 Q32 8 44 14 L44 18 Q32 12 20 18 Z" fill="url(#cutGrad)" opacity="0.5"/>
+    <!-- Inner arc cut suggesting force field layers -->
+    <circle cx="32" cy="32" r="17" fill="none" stroke="#111827" stroke-width="1.5" opacity="0.2"/>
+    <circle cx="32" cy="32" r="11" fill="none" stroke="#111827" stroke-width="1" opacity="0.12"/>
+    <!-- Diagonal slash / negative space -->
+    <path d="M42 16 L48 22 L24 50 L18 44 Z" fill="#111827" opacity="0.15"/>
+  </g>
+  <!-- Specular / shine layer -->
+  <circle cx="32" cy="32" r="24" fill="url(#orbShine)"/>
+  <!-- Rim light on bottom edge -->
+  <path d="M14 40 Q20 54 32 56 Q44 54 50 40" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.35" filter="url(#rimLight)"/>
+  <!-- Top highlight crescent -->
+  <ellipse cx="28" cy="18" rx="10" ry="5" fill="white" opacity="0.1"/>
+  <!-- Bright specular dot -->
+  <circle cx="24" cy="20" r="2.5" fill="white" opacity="0.35"/>
+  <circle cx="26" cy="22" r="1" fill="white" opacity="0.2"/>
+</svg>

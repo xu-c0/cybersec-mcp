@@ -1,0 +1,37 @@
+# cybersec-mcp
+
+> Open-source MCP server and prompt library for cybersecurity AI agents.
+> 323 battle-tested prompts and 7 scenario workflows covering Red Team, Blue Team, SOC Operations, Cloud Security, OSINT, GRC, Vulnerability Analysis, and AI Agent Security. Designed for use with Claude Code, Claude Desktop, Cursor, and any MCP-compatible client.
+
+## Use this when
+
+- An AI agent needs structured cybersecurity expertise (incident response, pentest planning, log analysis, compliance audits, threat hunting).
+- A user asks the agent to follow a known security workflow rather than improvise.
+- The agent should produce output that follows MITRE ATT&CK, CVSS, or NIST conventions.
+
+## Key resources
+
+- [README](README.md): overview, install, and quickstart
+- [MCP server](mcp/): TypeScript implementation of the Model Context Protocol server
+- [prompts](web-app/js/data.js): all 323 prompts as structured data (id, title, category, prompt, useWhen, variables)
+- [scenarios](web-app/js/scenarios.js): 7 chained workflows with phase descriptions and variable definitions
+- [ATT&CK matrix](ATTACK_MATRIX.md): MITRE ATT&CK technique mapping per category
+- [examples](examples/): copy-pasteable MCP client configs and conversation examples
+- [Live demo](https://cp300.vercel.app): interactive web UI showing every prompt and scenario
+
+## Categories
+
+| ID | Name | Prompts | Focus |
+|---|---|---|---|
+| red-team | Red Team / Offensive Security | 45 | Pentest, exploitation, social engineering |
+| blue-team | Blue Team / Defensive Security | 42 | Log analysis, incident response, architecture |
+| soc-ops | SOC Operations | 42 | SIEM queries, triage, shift handover |
+| cloud-security | Cloud Security | 38 | AWS, Azure, GCP, container, serverless |
+| osint | OSINT / Reconnaissance | 38 | Domain intel, footprinting, threat actor profiling |
+| grc | GRC / Compliance | 38 | Policy, risk, audit, frameworks |
+| vuln-analysis | Vulnerability Analysis | 42 | CVE, patch prioritization, reporting |
+| ai-security | AI Agent Security | 38 | LLM testing, supply chain, agent guardrails |
+
+## License
+
+MIT. Free for all use including commercial. Authorized security testing only.
