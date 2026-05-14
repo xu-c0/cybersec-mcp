@@ -1,7 +1,6 @@
-# CyberPrompt 300+ Design System
+# Design system
 
-> Complete design specification for the CyberPrompt 300+ interactive security prompt generator tool.
-> Version 1.0 | May 2026
+> Design specification for the web demo (`web-app/`) — colors, typography, components, layout.
 
 ---
 
@@ -19,7 +18,7 @@
 
 ## 1. Design Philosophy
 
-CyberPrompt 300+ uses a dark-first, data-dense interface that communicates security expertise and technical precision. The visual language draws from terminal aesthetics, threat-map dashboards, and modern SaaS tooling -- distilled into a clean, accessible product.
+The web demo uses a dark-first, data-dense interface that communicates security expertise and technical precision. The visual language draws from terminal aesthetics, threat-map dashboards, and modern SaaS tooling -- distilled into a clean, accessible product.
 
 **Core Principles:**
 
