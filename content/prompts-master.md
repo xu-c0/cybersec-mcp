@@ -1,4 +1,4 @@
-# CyberPrompt 300+ | The Ultimate AI Prompt Collection for Cybersecurity Professionals
+# cybersec-mcp | The Ultimate AI Prompt Collection for Cybersecurity Professionals
 
 > 300+ ready-to-use prompts for ChatGPT, Claude, and other AI assistants. Copy, paste, customize the bracketed variables, and get actionable cybersecurity output in seconds.
 
@@ -8688,7 +8688,7 @@ _Use when: Assessing and benchmarking organizational AI security maturity._
 
 ---
 
-*CyberPrompt 300+ | Version 1.0 | May 2026*
+*cybersec-mcp | Version 1.0 | May 2026*
 *Total prompts: 323*
 *Categories: 8*
 *Built for security professionals who use AI every day.*

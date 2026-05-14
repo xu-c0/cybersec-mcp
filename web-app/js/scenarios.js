@@ -1,4 +1,4 @@
-// CyberPrompt 300+ — Scenario Workflow Definitions
+// cybersec-mcp — Scenario Workflow Definitions
 
 const SCENARIOS = [
   {

@@ -1,4 +1,4 @@
-// CyberPrompt 300+ — Prompts Data
+// cybersec-mcp — Prompts Data
 // Auto-generated from prompts-master.md
 
 const CATEGORIES = [

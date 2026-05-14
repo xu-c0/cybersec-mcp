@@ -1,4 +1,4 @@
-// CyberPrompt 300+ — Main Application Logic
+// cybersec-mcp — Main Application Logic
 
 (function () {
   'use strict';
@@ -253,7 +253,7 @@
 
     // Hero
     html += '<div class="hero">';
-    html += '<h2>CyberPrompt <span class="accent">300+</span></h2>';
+    html += '<h2>cybersec<span class="accent">-mcp</span></h2>';
     html += '<p>' + heroDesc + '</p>';
     html += '</div>';
 

@@ -185,7 +185,7 @@ def escape_js_string(s):
 
 def generate_data_js(categories, prompts, output_path):
     lines = []
-    lines.append('// CyberPrompt 300+ — Prompts Data')
+    lines.append('// cybersec-mcp — Prompts Data')
     lines.append('// Auto-generated from prompts-master.md')
     lines.append('')
 

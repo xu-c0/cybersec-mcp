@@ -1,4 +1,4 @@
-// CyberPrompt 300+ — Internationalization (i18n)
+// cybersec-mcp — Internationalization (i18n)
 
 const I18N = {
   en: {
@@ -30,8 +30,8 @@ const I18N = {
     // Before/After Demo
     seeTheDifference: 'See the Difference',
     beforeVsAfter: 'Before vs After',
-    withoutCyberPrompt: 'Without CyberPrompt',
-    withCyberPrompt: 'With CyberPrompt',
+    withoutCyberPrompt: 'Without cybersec-mcp',
+    withCyberPrompt: 'With cybersec-mcp',
 
     // Demo cards
     demoTitle1: 'Incident Response Triage',
@@ -157,8 +157,8 @@ const I18N = {
 
     seeTheDifference: '\uCC28\uC774\uB97C \uD655\uC778\uD558\uC138\uC694',
     beforeVsAfter: '\uC0AC\uC6A9 \uC804 vs \uC0AC\uC6A9 \uD6C4',
-    withoutCyberPrompt: 'CyberPrompt \uC5C6\uC774',
-    withCyberPrompt: 'CyberPrompt \uC0AC\uC6A9 \uC2DC',
+    withoutCyberPrompt: 'cybersec-mcp \uC5C6\uC774',
+    withCyberPrompt: 'cybersec-mcp \uC0AC\uC6A9 \uC2DC',
 
     demoTitle1: '\uC778\uC2DC\uB358\uD2B8 \uB300\uC751 \uD2B8\uB9AC\uC544\uC9C0',
     demoTitle2: '\uD074\uB77C\uC6B0\uB4DC \uBCF4\uC548 \uAC10\uC0AC',
@@ -272,8 +272,8 @@ const I18N = {
 
     seeTheDifference: '\u9055\u3044\u3092\u78BA\u8A8D',
     beforeVsAfter: '\u5C0E\u5165\u524D vs \u5C0E\u5165\u5F8C',
-    withoutCyberPrompt: 'CyberPrompt\u306A\u3057',
-    withCyberPrompt: 'CyberPrompt\u3042\u308A',
+    withoutCyberPrompt: 'cybersec-mcp\u306A\u3057',
+    withCyberPrompt: 'cybersec-mcp\u3042\u308A',
 
     demoTitle1: '\u30A4\u30F3\u30B7\u30C7\u30F3\u30C8\u5BFE\u5FDC\u30C8\u30EA\u30A2\u30FC\u30B8',
     demoTitle2: '\u30AF\u30E9\u30A6\u30C9\u30BB\u30AD\u30E5\u30EA\u30C6\u30A3\u76E3\u67FB',
