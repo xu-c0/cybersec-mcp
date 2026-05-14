@@ -79,7 +79,6 @@ mcp/         MCP server (TypeScript, in progress)
 web-app/     Static demo deployed to Vercel
 content/     prompts-master.md — prompt source of truth
 examples/    Client configs (Claude Desktop, Cursor, Claude Code)
-docs/        PDF reference guide, QA reports
 ```
 
 `parse_prompts.py` regenerates `web-app/js/data.js` from `content/prompts-master.md`.

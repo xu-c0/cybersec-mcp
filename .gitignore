@@ -30,6 +30,7 @@ Thumbs.db
 # Claude Code project-local config (writer agent, session context, etc.)
 .claude/
 CLAUDE.md
+REVIEW_REPORT.md
 
 # Python
 __pycache__/

@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "sync-data": "node scripts/sync-data.mjs",
-    "build": "npm run sync-data && tsc",
+    "copy-data": "node scripts/copy-data.mjs",
+    "build": "npm run sync-data && tsc && npm run copy-data",
     "start": "node dist/index.js",
     "prepublishOnly": "npm run build"
   },
