@@ -31,6 +31,11 @@ Thumbs.db
 .claude/
 CLAUDE.md
 REVIEW_REPORT.md
+MCP_REGISTRY_PLAN.md
+
+# MCP Registry publisher binary (downloaded on demand)
+mcp-publisher.exe
+mcp-publisher
 
 # Python
 __pycache__/
