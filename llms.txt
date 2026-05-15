@@ -17,7 +17,7 @@
 - [scenarios](web-app/js/scenarios.js): 7 chained workflows with phase descriptions and variable definitions
 - [ATT&CK matrix](ATTACK_MATRIX.md): MITRE ATT&CK technique mapping per category
 - [examples](examples/): copy-pasteable MCP client configs and conversation examples
-- [Live demo](https://cp300.vercel.app): interactive web UI showing every prompt and scenario
+- [Live demo](https://cybersec-mcp.vercel.app): interactive web UI showing every prompt and scenario
 
 ## Categories
 

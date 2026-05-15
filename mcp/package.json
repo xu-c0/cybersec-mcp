@@ -1,6 +1,6 @@
 {
   "name": "@xu-c0/cybersec-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "mcpName": "io.github.xu-c0/cybersec-mcp",
   "description": "MCP server with 323 cybersecurity prompts and 7 scenario workflows. Drops into Claude Desktop, Claude Code, Cursor, and other MCP-compatible clients.",
   "type": "module",

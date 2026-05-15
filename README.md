@@ -2,14 +2,12 @@
 
 MCP server with 323 cybersecurity prompts and 7 chained workflows. Install it and Claude (or any MCP-compatible client) can run an incident-response plan, a cloud audit, or a pentest by calling tools instead of you copy-pasting prompts.
 
-[Live demo](https://cp300.vercel.app) · [MIT License](LICENSE) · [Model Context Protocol](https://modelcontextprotocol.io)
+[Live demo](https://cybersec-mcp.vercel.app) · [MIT License](LICENSE) · [Model Context Protocol](https://modelcontextprotocol.io)
 
 ## Install
 
-> The npm package is not published yet. The MCP server in `mcp/` is being scaffolded. Until then, use the [web demo](https://cp300.vercel.app) or copy prompts from `content/prompts-master.md`.
-
 ```bash
-npx -y @xu-c0/cybersec-mcp   # coming soon
+npx -y @xu-c0/cybersec-mcp
 ```
 
 Claude Desktop config (`~/Library/Application Support/Claude/claude_desktop_config.json` on macOS, `%APPDATA%\Claude\claude_desktop_config.json` on Windows):
@@ -64,7 +62,7 @@ Definitions live in `web-app/js/scenarios.js`.
 
 ## Web demo
 
-[**cp300.vercel.app**](https://cp300.vercel.app) — browse every prompt, fill in variables, copy the rendered text into any LLM. Dark mode, English / 한국어 / 日本語, no signup. Same data as the MCP server, different interface.
+[**cybersec-mcp.vercel.app**](https://cybersec-mcp.vercel.app) — browse every prompt, fill in variables, copy the rendered text into any LLM. Dark mode, English / 한국어 / 日本語, no signup. Same data as the MCP server, different interface.
 
 Useful when you want to inspect what a tool will send before wiring up the server, or hand a teammate a one-off prompt.
 

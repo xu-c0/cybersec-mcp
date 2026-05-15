@@ -10,7 +10,7 @@
   let searchQuery = '';
   let skillFilter = 'all';
   let variableValues = {};
-  let currentLang = localStorage.getItem('cp300-lang') || 'en';
+  let currentLang = localStorage.getItem('cybersec-mcp-lang') || 'en';
 
   // DOM refs
   const contentArea = document.getElementById('content-area');
@@ -64,7 +64,7 @@
   // =====================================================================
 
   function getInitialTheme() {
-    var saved = localStorage.getItem('cp300-theme');
+    var saved = localStorage.getItem('cybersec-mcp-theme');
     if (saved === 'light' || saved === 'dark') return saved;
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
       return 'light';
@@ -74,7 +74,7 @@
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('cp300-theme', theme);
+    localStorage.setItem('cybersec-mcp-theme', theme);
   }
 
   function toggleTheme() {
@@ -135,7 +135,7 @@
 
   function onLangChange() {
     currentLang = langSelect.value;
-    localStorage.setItem('cp300-lang', currentLang);
+    localStorage.setItem('cybersec-mcp-lang', currentLang);
     updateStaticUI();
     renderSidebar();
 
